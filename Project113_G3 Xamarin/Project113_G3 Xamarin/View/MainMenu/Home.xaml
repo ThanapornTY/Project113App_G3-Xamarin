@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin.ViewModel"
+             Title="Home"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.Home">
+    <ContentPage.BindingContext>
+        <local:HomeViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Padding="5,5,5,5">
+            <SearchBar Placeholder="Search items..."
+                    x:Name="searchBar"
+                    CancelButtonColor="Orange"
+                    PlaceholderColor="Orange"
+                    TextColor="Orange"
+                    
+                    TextTransform="Lowercase"
+                    HorizontalTextAlignment="Center"
+                    TextChanged="search_TextChanged"
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    
+                      />
+
+            <CollectionView x:Name="NameGameListGames" ItemsSource="{Binding Products}" SelectionMode="Single" SelectedItem="{Binding selectProduct}" SelectionChangedCommand="{Binding SelectCommand}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="2"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Frame BackgroundColor="LightGray"
+                               Padding="10"
+                               CornerRadius="10">
+                            <StackLayout>
+                                <Image Source="{Binding Image}" HeightRequest="200" />
+                                <Label Text="{Binding Title}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            
+                        </Frame>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            
+
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

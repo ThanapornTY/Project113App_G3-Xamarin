@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="True"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.ChatApp">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            <Frame>
+
+                <StackLayout Margin="5,5,5,5">
+                    <Entry x:Name="InputText" />
+                    
+                    <Label Text="List"
+                        HorizontalOptions="CenterAndExpand"   
+                        VerticalOptions="CenterAndExpand"/>
+                    <ListView x:Name="lstview" ItemSelected="lst_ItemSelected">
+
+                    </ListView>
+
+                    <Button x:Name="addText" Text="ADD" FontSize="Large" CornerRadius="10" BackgroundColor="GhostWhite" Clicked="AddList_Clicked"/>
+                    <Button x:Name="deleteTLst" Text="Delete" FontSize="Large" CornerRadius="10" BackgroundColor="GhostWhite" Clicked="DelList_Clicked"/>
+
+                </StackLayout>
+
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

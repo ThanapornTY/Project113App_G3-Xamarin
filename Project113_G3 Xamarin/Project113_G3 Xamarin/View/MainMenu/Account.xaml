@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin"
+             Title="Account"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.Account">
+
+    <ContentPage.Content>
+        
+        <!--
+        <CollectionView x:Name="NameGameListGames" ItemsSource="{Binding Products}" SelectionMode="Single" SelectedItem="{Binding selectProduct}" SelectionChangedCommand="{Binding SelectCommand}">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="2"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <Frame BackgroundColor="LightGray"
+                               Padding="10"
+                               CornerRadius="10">
+                        <StackLayout>
+                            <Image Source="3000" HeightRequest="200" />
+                            <Label Text="000" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                    </Frame>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        -->
+
+
+        <StackLayout Padding="20,20,20,20">
+
+            <Frame BackgroundColor="LightGray" Padding="20" CornerRadius="10">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Frame Padding="0" 
+                           HeightRequest="100"
+                           WidthRequest="100"
+                           CornerRadius="100"
+                           BackgroundColor="White"
+                           BorderColor="Teal"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           IsClippedToBounds="True"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           Grid.RowSpan="1"
+                           >
+                            <Frame.Content>
+                                <Image Source="https://i.kym-cdn.com/entries/icons/facebook/000/010/163/gintoki_by_lightningfarron165-d57obmk.jpg" Aspect="Fill" />
+                            </Frame.Content>
+
+                        </Frame>
+
+                        <Label Text="Thanaporn" HeightRequest="80" Grid.Column="1" Grid.Row="0" Padding="5,15,5,5" FontSize="25"/>
+                        <Label Text="ID: " HeightRequest="80" Grid.Column="1" Grid.Row="0" Padding="5,50,5,5" FontSize="19"/>
+                        <Label Text="001" HeightRequest="80" Grid.Column="1" Grid.Row="0" Padding="30,50,5,5" FontSize="19"/>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Profile" FontSize="20"  HorizontalOptions="Start"/>
+            <Button Text="Edit Profile" FontSize="15" HeightRequest="60" Clicked="EditPf_Clicked" CornerRadius="10" />
+
+
+            <Label Text="QRGame" FontSize="20"  HorizontalOptions="Start"/>
+            <Button Text="QRGame" FontSize="15" HeightRequest="60" CornerRadius="10" Clicked="RqGame_Clicked"/>
+            <Button Text="Sign Out" FontSize="15" HeightRequest="60" CornerRadius="10" BackgroundColor="Tomato" TextColor="White" Clicked="LogOut_Click"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

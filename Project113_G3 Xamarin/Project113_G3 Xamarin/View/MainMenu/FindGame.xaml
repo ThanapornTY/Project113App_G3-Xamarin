@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.FindGame">
+    <ContentPage.Content>
+        <StackLayout Padding="5,5,5,5">
+            <Button Text="+" Clicked="CreRoom_Click" />
+            <ListView x:Name="myListView" HasUnevenRows="True" ItemSelected="lst_ItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="PowderBlue"  Orientation="Vertical">
+
+                                <StackLayout Orientation="Horizontal" Padding="20,10,0,0">
+                                    <Label Text="{Binding Room_Name}" FontSize="25" TextColor="Blue"/>
+
+                                    <Label Text="  #" TextColor="Blue" VerticalOptions="End"/>
+                                    <Label Text="{Binding Id_Room}" TextColor="Blue" VerticalOptions="End"/>
+
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Padding="20,5,0,20">
+                                    <Label Text="Game : " TextColor="Blue" VerticalOptions="End"/>
+                                    <Label Text="{Binding GameName}" TextColor="Red"/>
+                                    <Label Text="  Level : " TextColor="Blue" VerticalOptions="End"/>
+                                    <Label Text="{Binding Level_Game}" TextColor="Red"/>
+
+                                </StackLayout>
+
+                                
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

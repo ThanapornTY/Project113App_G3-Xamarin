@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.UpdateRoom">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Entry x:Name="idRoom" Text="{Binding id_Room}" ></Entry>
+            <Entry x:Name="roomName" Text="{Binding room_Name}"></Entry>
+            <Entry x:Name="gameName"  Text="{Binding game_Name}" ></Entry>
+            <Entry x:Name="rankGame"  Text="{Binding rank_Game}" ></Entry>
+            <Entry x:Name="levelGame"  Text="{Binding level_Game}" ></Entry>
+
+            <Label Text="Time To Play" />
+            <TimePicker x:Name="timeToplay" Time="{Binding time_Toplay}"/>
+            <Label Text="Deseription"/>
+            <Editor x:Name="deseriptionRoom"  Text="{Binding deseription_Room}"></Editor>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Update" Clicked="Update_Clicked" />
+                <Button Text="Cancal" Clicked="Cancal_Clicked" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

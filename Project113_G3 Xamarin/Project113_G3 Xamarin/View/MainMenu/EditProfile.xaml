@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.EditProfile">
+    <ContentPage.Content>
+        <StackLayout Padding="20,5,20,5">
+            <Label Text="Edit Profile" FontSize="Large" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Editor x:Name="uid_useer" Text="{Binding UID}" Placeholder="UID" />
+            <Editor x:Name="userName_user" Text="{Binding UserName}" Placeholder="UserName" />
+            <Editor x:Name="email_user" Text="{Binding Email}" Placeholder="Email" />
+            <Entry x:Name="password_user" Text="{Binding Password}" IsPassword="True"  Placeholder="Password"/>
+           
+            <DatePicker x:Name="datepicker_user" Date="{Binding DOB}" />
+
+
+
+            <StackLayout RadioButtonGroup.GroupName="SimpleRadios" Orientation="Horizontal">
+                <Label Text="Gender" x:Name="gender_user"/>
+                <RadioButton Content="Male"/>
+                <RadioButton Content="Female"/>
+            </StackLayout>
+
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition Height=".1*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".1*"/>
+                    <ColumnDefinition Width=".1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Update" Clicked="Update_Clicked" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1"/>
+
+            </Grid>
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

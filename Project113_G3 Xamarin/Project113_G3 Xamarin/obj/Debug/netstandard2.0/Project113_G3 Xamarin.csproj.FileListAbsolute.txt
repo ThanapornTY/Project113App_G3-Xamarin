@@ -1,0 +1,29 @@
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\Login.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\Home.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainTabbedPage.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\Register.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.AssemblyInfoInputs.cache
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.AssemblyInfo.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.csproj.CoreCompileInputs.cache
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.dll
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\ref\Project113_G3 Xamarin.dll
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.pdb
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\bin\Debug\netstandard2.0\Project113_G3 Xamarin.deps.json
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\bin\Debug\netstandard2.0\Project113_G3 Xamarin.dll
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\bin\Debug\netstandard2.0\ref\Project113_G3 Xamarin.dll
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\bin\Debug\netstandard2.0\Project113_G3 Xamarin.pdb
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\GamesDetail.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\Account.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\Notification.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\CreateRoom.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\FindGame.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\UpdateRoom.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\ChatApp.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\Page\Page1.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\EditProfile.xaml.g.cs
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\Project113_G3 Xamarin.csproj.AssemblyReference.cache
+D:\Pj113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\Project113_G3 Xamarin\obj\Debug\netstandard2.0\View\MainMenu\QRGame.xaml.g.cs
