@@ -2,12 +2,14 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Project113_G3_Xamarin.APIs;
 
 namespace Project113_G3_Xamarin.View.MainMenu
 {
@@ -15,28 +17,50 @@ namespace Project113_G3_Xamarin.View.MainMenu
     public partial class CreateRoom : ContentPage
     {
         public SQLiteConnection conn;
+
+        ObservableCollection<GamesModel> Games;
+
         public CreateRoomModel regmodel;
+
+        ApiService apiService;
+
+
         public CreateRoom()
         {
             InitializeComponent();
 
             conn = DependencyService.Get<SQLiteDroid>().GetConnection();
             conn.CreateTable<CreateRoomModel>();
+
+            apiService = new ApiService();
+            GetGameModel();
+
+            Games = new ObservableCollection<GamesModel>();
+
+            Games.Add(new GamesModel { NameGame = "Genshin Impact" });
+            Games.Add(new GamesModel { NameGame = "Call of Duty" });
+            Games.Add(new GamesModel { NameGame = "Valorant" });
+            Games.Add(new GamesModel { NameGame = "Pubg" });
+            Games.Add(new GamesModel { NameGame = "Goose Goose Duck" });
+            Games.Add(new GamesModel { NameGame = "League of Legends" });
+
+            pickerGames.ItemsSource = Games;
+
         }
 
-        private void Signed_Clicked(object sender, EventArgs e)
+        private async void Signed_Clicked(object sender, EventArgs e)
         {
             CreateRoomModel reg = new CreateRoomModel();
             reg.Id_Room = idRoom.Text;
             reg.Room_Name = roomName.Text;
-            reg.GameName = gameName.Text;
             reg.TimeToPlay = timeToplay.Time.ToString();
+            reg.GameName = Games.ToString();
             reg.Rank_Game = rankGame.Text;
             reg.Level_Game = levelGame.Text;
             reg.Deseription_Room = deseriptionRoom.Text;
             int x = 0;
 
-            if (!string.IsNullOrEmpty(idRoom.Text) && !string.IsNullOrEmpty(roomName.Text) && !string.IsNullOrEmpty(gameName.Text))
+            if (!string.IsNullOrEmpty(idRoom.Text) && !string.IsNullOrEmpty(roomName.Text)  )
             {
                 try
                 {
@@ -49,37 +73,39 @@ namespace Project113_G3_Xamarin.View.MainMenu
 
                 if (x == 1)
                 {
-                    DisplayAlert("Resistration", "Thanks for Resistration", "OK");
+                    await Application.Current.MainPage.Navigation.PushAsync(new View.MainMenu.CreateRoom());
+                    
+                    await DisplayAlert("Create Room", "Thanks for Resistration", "OK");
+
+                    
                 }
                 else
                 {
-                    DisplayAlert("Resistration Failled", "Please try again", "ERROR");
+                    await Application.Current.MainPage.DisplayAlert("Create Room Failled", "Please try again", "ERROR");
                 }
             }
             else
             {
-                DisplayAlert("Resistration", "Not Complete!", "OK");
+                await Application.Current.MainPage.DisplayAlert("Create Room Failled", "Not Complete!", "OK");
             }
         }
 
-        private async void Show_Clicked(object sender, EventArgs e)
+        public async void Show_Clicked(object sender, EventArgs args)
         {
-
-            await Navigation.PushAsync(new FindGame());
-
-            /*
-            try
-            {
-                await Navigation.PushAsync(new Display());
-            }
-            catch (Exception ex)
-            {
-                //await DisplayAlert("Resistration Failled", "Please try again", "ERROR");
-
-                await Navigation.PushAsync(new Display());
-
-                throw ex;
-            }*/
+            
+            await Navigation.PushAsync(new View.MainMenu.FindGame());
+            
         }
+
+        
+
+
+        async void GetGameModel()
+        {
+            Games = await apiService.GetGameModel();
+            Console.WriteLine(Games);
+        }
+
+
     }
 }

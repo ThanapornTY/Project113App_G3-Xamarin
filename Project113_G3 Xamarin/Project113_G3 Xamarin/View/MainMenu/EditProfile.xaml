@@ -17,7 +17,6 @@
             <DatePicker x:Name="datepicker_user" Date="{Binding DOB}" />
 
 
-
             <StackLayout RadioButtonGroup.GroupName="SimpleRadios" Orientation="Horizontal">
                 <Label Text="Gender" x:Name="gender_user"/>
                 <RadioButton Content="Male"/>

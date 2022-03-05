@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Project113_G3_Xamarin"
+             Title="Find Game"
              x:Class="Project113_G3_Xamarin.View.MainMenu.FindGame">
     <ContentPage.Content>
         <StackLayout Padding="5,5,5,5">
@@ -13,10 +14,13 @@
                             <StackLayout BackgroundColor="PowderBlue"  Orientation="Vertical">
 
                                 <StackLayout Orientation="Horizontal" Padding="20,10,0,0">
+
+
                                     <Label Text="{Binding Room_Name}" FontSize="25" TextColor="Blue"/>
 
                                     <Label Text="  #" TextColor="Blue" VerticalOptions="End"/>
                                     <Label Text="{Binding Id_Room}" TextColor="Blue" VerticalOptions="End"/>
+                                    <!-- <Button Text="Del" HorizontalOptions="EndAndExpand"/> -->
 
                                 </StackLayout>
 

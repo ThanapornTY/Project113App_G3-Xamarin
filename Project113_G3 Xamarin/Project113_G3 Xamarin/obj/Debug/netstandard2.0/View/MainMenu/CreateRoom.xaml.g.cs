@@ -23,7 +23,7 @@ namespace Project113_G3_Xamarin.View.MainMenu {
         private global::Xamarin.Forms.Entry roomName;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry gameName;
+        private global::Xamarin.Forms.Picker pickerGames;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry rankGame;
@@ -42,7 +42,7 @@ namespace Project113_G3_Xamarin.View.MainMenu {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CreateRoom));
             idRoom = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "idRoom");
             roomName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "roomName");
-            gameName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "gameName");
+            pickerGames = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerGames");
             rankGame = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "rankGame");
             levelGame = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "levelGame");
             timeToplay = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TimePicker>(this, "timeToplay");

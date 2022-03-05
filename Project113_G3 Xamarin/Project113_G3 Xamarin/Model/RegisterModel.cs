@@ -7,19 +7,21 @@ namespace Project113_G3_Xamarin.Model
 {
     public class RegisterModel
     {
-        [PrimaryKey]
+        //[PrimaryKey]
         public string UID { get; set; }
 
-        public string UserName { get; set; }
+        public string Name { get; set; }
 
-        public string Email { get; set; }
+        public string Email_User { get; set; }
 
         public string Password { get; set; }
 
-        public string DOB { get; set;}
+        public string ConfirmPassword { get; set; }
 
-        public string Gender { get; set; }
+        public string Bd_User { get; set;}
 
-        public string Ima_User { get; set; }
+        public string GenderUser { get; set; }
+
+        //public string url { get; set; }
     }
 }

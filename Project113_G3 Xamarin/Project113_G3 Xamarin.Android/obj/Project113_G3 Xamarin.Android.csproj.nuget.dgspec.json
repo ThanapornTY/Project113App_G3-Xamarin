@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj": {}
+    "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj": {}
   },
   "projects": {
-    "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj": {
+    "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj",
+        "projectUniqueName": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj",
         "projectName": "Project113_G3 Xamarin.Android",
-        "projectPath": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj",
+        "projectPath": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\Project113_G3 Xamarin.Android.csproj",
         "packagesPath": "C:\\Users\\misak\\.nuget\\packages\\",
-        "outputPath": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\obj\\",
+        "outputPath": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj": {
-                "projectPath": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj"
+              "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj": {
+                "projectPath": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj": {
+    "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj",
+        "projectUniqueName": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj",
         "projectName": "Project113_G3 Xamarin",
-        "projectPath": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj",
+        "projectPath": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.csproj",
         "packagesPath": "C:\\Users\\misak\\.nuget\\packages\\",
-        "outputPath": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\obj\\",
+        "outputPath": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -100,6 +100,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -123,7 +127,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

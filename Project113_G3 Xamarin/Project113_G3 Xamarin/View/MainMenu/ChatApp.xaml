@@ -2,24 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              NavigationPage.HasBackButton="True"
+             Title="ChatRoom Name"
              x:Class="Project113_G3_Xamarin.View.MainMenu.ChatApp">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" IconImageSource="~/ImaAndIcon/Icon/109165-icons8-dots-loading-48.png"/>
+        <ToolbarItem Order="Secondary" Text="Ban" Clicked="Report_Clicked" />
+        
+    </ContentPage.ToolbarItems>
+    
     
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
-            <Frame>
+        <StackLayout >
 
-                <StackLayout Margin="5,5,5,5">
-                    <Entry x:Name="InputText" />
+            
+             <ListView x:Name="lstview" ItemSelected="lst_ItemSelected" Margin="10" />
+
+            
+            
+            <Frame Padding="10,10,10,10" Margin="10" HeightRequest="150">
+
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".1*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".3*" />
+                            <ColumnDefinition Width=".1*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Entry x:Name="InputText" Grid.Row="0" Grid.Column="0" HeightRequest="80" FontSize="19" />
+
+                        <Button x:Name="addText" Text="ADD" FontSize="Small" 
+                                CornerRadius="10" BackgroundColor="GhostWhite" 
+                                Clicked="AddList_Clicked"
+                                Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="1"
+                                HeightRequest="50"
+                                />
+                    </Grid>
+
                     
-                    <Label Text="List"
-                        HorizontalOptions="CenterAndExpand"   
-                        VerticalOptions="CenterAndExpand"/>
-                    <ListView x:Name="lstview" ItemSelected="lst_ItemSelected">
+                    
+                    
 
-                    </ListView>
 
-                    <Button x:Name="addText" Text="ADD" FontSize="Large" CornerRadius="10" BackgroundColor="GhostWhite" Clicked="AddList_Clicked"/>
-                    <Button x:Name="deleteTLst" Text="Delete" FontSize="Large" CornerRadius="10" BackgroundColor="GhostWhite" Clicked="DelList_Clicked"/>
+
+                    
+                    <!--<Button x:Name="deleteTLst" Text="Delete" FontSize="Large" CornerRadius="10" BackgroundColor="GhostWhite" Clicked="DelList_Clicked"/>-->
 
                 </StackLayout>
 

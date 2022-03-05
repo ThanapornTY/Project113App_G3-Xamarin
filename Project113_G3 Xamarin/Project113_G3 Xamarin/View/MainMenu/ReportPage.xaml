@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Report Room"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin.ViewModel"
+             x:Class="Project113_G3_Xamarin.View.MainMenu.ReportPage">
+    <ContentPage.BindingContext>
+        <local:ReportUserViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout Padding="20,10,10,10">
+                <Label Text="REPORT" FontSize="20" Padding="0,10,10,10"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".1*"/>
+                        <ColumnDefinition Width=".3*"/>
+                        <ColumnDefinition Width=".1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame Padding="0" 
+                           HeightRequest="60"
+                           WidthRequest="60"
+                           CornerRadius="100"
+                           BackgroundColor="White"
+                           BorderColor="Teal"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           IsClippedToBounds="True"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           Grid.RowSpan="1"
+                           >
+                        <Frame.Content>
+                            <Image Source="https://i.kym-cdn.com/entries/icons/facebook/000/010/163/gintoki_by_lightningfarron165-d57obmk.jpg" Aspect="Fill" />
+                        </Frame.Content>
+
+                    </Frame>
+
+                    <Label x:Name="UserName_report" Text="Thanaporn" HeightRequest="40" Grid.Column="1" Grid.Row="0" FontSize="20"/>
+                    <Label Text="ID: " HeightRequest="80" Grid.Column="1" Grid.Row="0" Padding="0,30,5,5" FontSize="19"/>
+                    <Label Text="2" HeightRequest="80" Grid.Column="1" Grid.Row="0" Padding="30,30,5,5" FontSize="19"/>
+                
+                    <Button Text="Report" Clicked="Submit_Clicked" Background="Green"  HeightRequest="40" WidthRequest="80" Grid.Column="2" Grid.Row="0" HorizontalOptions="EndAndExpand" FontSize="13"/>
+
+                    
+                </Grid>
+                
+                <RadioButton Content="Toxic" FontSize="Small"
+                                 TextColor="Black"
+                             Value="Toxic"
+                             x:Name="Re1"
+                                 />
+                <Label Text="Offensive language, hateful speech, sexual harassment" Padding="10,0,0,0"/>
+
+                <RadioButton Content="Leaving the Game / AFK" FontSize="Small"
+                                 TextColor="Black"
+                             Value="AFK"
+                                 x:Name="Re2"
+                                  />
+                <Label Text="Disconnected, AFK, present but not participating" Padding="10,0,0,0"/>
+
+                <RadioButton Content="Inappropriate Name" FontSize="Small"
+                                 TextColor="Black"
+                             Value="Inappropriate Name"
+                             x:Name="Re3"
+                                  />
+                <Label Text="Player name or tagline, group name" Padding="10,0,0,0"/>
+
+                <RadioButton Content="Threats" FontSize="Small"
+                                 TextColor="Black"
+                             Value="Threats"
+                             x:Name="Re4"
+                             />
+                <Label Text="Out-of-game physical harm, doxxing, bullying" Padding="10,0,0,0"/>
+
+                <Label Text="Note" />
+                <Editor x:Name="ReNote" Text="{Binding reportUsers.RQrp_Note}" Placeholder="Email" />
+                
+
+            </StackLayout>
+
+
+            <!--<Button Text="Submit" Command="{Binding ReportCommand}" Background="Green" HeightRequest="50" WidthRequest="360" HorizontalOptions="Center"/>-->
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

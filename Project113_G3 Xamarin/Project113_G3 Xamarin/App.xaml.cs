@@ -11,9 +11,9 @@ namespace Project113_G3_Xamarin
             InitializeComponent();
 
             
-           MainPage = new NavigationPage(new View.MainTabbedPage());
+           //MainPage = new NavigationPage(new View.MainTabbedPage());
 
-            //MainPage = new NavigationPage(new View.Login());
+           MainPage = new NavigationPage(new View.Login());
         }
 
         protected override void OnStart()

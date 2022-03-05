@@ -37,9 +37,9 @@ namespace Project113_G3_Xamarin.View.MainMenu
 
         private async void lst_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            await Application.Current.MainPage.Navigation.PushModalAsync(new View.MainMenu.ChatApp());
+            await Application.Current.MainPage.Navigation.PushAsync(new View.MainMenu.ChatApp());
 
-            /*
+            
             itemSelected = e.SelectedItem as CreateRoomModel;
             var resultN = new CreateRoomModel
             {
@@ -51,7 +51,8 @@ namespace Project113_G3_Xamarin.View.MainMenu
                 Level_Game = itemSelected.Level_Game,
                 Deseription_Room = itemSelected.Deseription_Room
             };
-
+            
+            /*
             bool answerl = await DisplayAlert("Do you want to Edit Data?", "ID: " + itemSelected.Room_Name.ToString() + "\n" + "Name: " + itemSelected.GameName, "Yes", "No");
             if (answerl == true)
             {
@@ -60,7 +61,7 @@ namespace Project113_G3_Xamarin.View.MainMenu
                 await Navigation.PushAsync(newP);
             }
             else if (answerl == false)
-            {
+            {*/
                 bool answer2 = await DisplayAlert("Do you want to Remove Data?", "ID: " + itemSelected.Room_Name.ToString() + "\n" + "Name: " + itemSelected.GameName, "Yes", "No");
                 if (answer2 == true)
                 {
@@ -74,7 +75,7 @@ namespace Project113_G3_Xamarin.View.MainMenu
                         throw ex;
                     }
                 }
-            }*/
+            
         }
 
         public async void CreRoom_Click(object sender, EventArgs e)

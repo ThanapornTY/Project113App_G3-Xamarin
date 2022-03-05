@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Project113_G3 Xamarin.Android.dll" comes first in this list. */
 		"Project113_G3 Xamarin.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Project113_G3 Xamarin.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

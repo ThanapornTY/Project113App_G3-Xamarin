@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Project113_G3_Xamarin.APIs;
 
 namespace Project113_G3_Xamarin.View
 {
@@ -15,30 +16,33 @@ namespace Project113_G3_Xamarin.View
     public partial class Register : ContentPage
     {
         public SQLiteConnection conn;
-        public RegisterModel Regismodel;
+        //public Register_Model register_Model;
+
         public Register()
         {
             InitializeComponent();
 
-            conn = DependencyService.Get<SQLiteDroid>().GetConnection();
-            conn.CreateTable<RegisterModel>();
+            //conn = DependencyService.Get<SQLiteDroid>().GetConnection();
+            //conn.CreateTable<Register_Model>();
+
         }
 
+        /*
 
         public async void Register_Clicked(object odj, EventArgs args)
         {
             /*
             DisplayAlert(
                 "DATE", datepicker.Date.ToShortDateString(), "OK");
-            */
+            
 
             RegisterModel reg = new RegisterModel();
             reg.UID = uid_useer.Text;
-            reg.UserName = userName_user.Text;
-            reg.Email = email_user.Text;
+            reg.Name = userName_user.Text;
+            reg.Email_User = email_user.Text;
             reg.Password = password_user.Text;
-            reg.DOB = datepicker_user.Date.ToString();
-            reg.Gender = gender_user.Text;
+            reg.Bd_User = datepicker_user.Date.ToString();
+            reg.GenderUser = gender_user.Text;
             
             int x = 0;
 
@@ -69,6 +73,19 @@ namespace Project113_G3_Xamarin.View
             else
             {
                 DisplayAlert("Resistration", "Not Complete!", "OK");
+            }
+        }*/
+
+
+        public async void OnImageNameTapped(object sender, EventArgs args)
+        {
+            try
+            {
+                await Navigation.PushAsync(new View.Login());
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 

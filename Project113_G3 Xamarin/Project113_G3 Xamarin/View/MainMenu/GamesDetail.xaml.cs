@@ -17,6 +17,9 @@ namespace Project113_G3_Xamarin.View.MainMenu
             InitializeComponent();
         }
 
-        
+        public async void GotoFind_Click (object sender, EventArgs e)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new View.MainMenu.FindGame());
+        }
     }
 }

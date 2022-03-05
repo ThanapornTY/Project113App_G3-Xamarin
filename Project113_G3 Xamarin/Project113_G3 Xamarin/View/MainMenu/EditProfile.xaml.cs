@@ -30,11 +30,11 @@ namespace Project113_G3_Xamarin.View.MainMenu
             RegisterModel reg = new RegisterModel();
 
             reg.UID = uid_useer.Text;
-            reg.UserName = userName_user.Text;
-            reg.Email = email_user.Text;
-            reg.DOB = datepicker_user.Date.ToString();
+            reg.Name = userName_user.Text;
+            reg.Email_User = email_user.Text;
+            reg.Bd_User = datepicker_user.Date.ToString();
             reg.Password = password_user.Text;
-            reg.Gender = gender_user.Text;
+            reg.GenderUser = gender_user.Text;
 
             int x = 0;
 

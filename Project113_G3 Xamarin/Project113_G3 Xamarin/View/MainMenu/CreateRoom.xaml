@@ -2,26 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Project113_G3_Xamarin"
+             NavigationPage.HasBackButton="True"
              x:Class="Project113_G3_Xamarin.View.MainMenu.CreateRoom">
     <ContentPage.Content>
         <StackLayout Margin="10">
-            <Entry x:Name="idRoom" Placeholder="ID Room" ></Entry>
-            <Entry x:Name="roomName" Placeholder="Room Name" ></Entry>
-            <Entry x:Name="gameName" Placeholder="Game Name" ></Entry>
-            <Entry x:Name="rankGame" Placeholder="Rank in Game" ></Entry>
-            <Entry x:Name="levelGame" Placeholder="Level in Game" ></Entry>
+            <Entry x:Name="idRoom"  Placeholder="ID Room" ></Entry>
+            <Entry x:Name="roomName"  Placeholder="Room Name" ></Entry>
+            <Picker Title="--Select Game Name--" x:Name="pickerGames" ItemDisplayBinding="{Binding NameGame}">
+                
+            </Picker>
+            <Entry x:Name="rankGame"  Placeholder="Rank in Game" ></Entry>
+            <Entry x:Name="levelGame"  Placeholder="Level in Game" ></Entry>
 
             <Label Text="Time To Play" />
             <TimePicker x:Name="timeToplay"/>
             
             <Label Text="Deseription" />
-            <Editor x:Name="deseriptionRoom" ></Editor>
+            <Editor x:Name="deseriptionRoom" />
 
             <StackLayout Orientation="Horizontal">
-                <Button Text="Sign up" Clicked="Signed_Clicked" />
-                <Button Text="Show" Clicked="Show_Clicked" />
+                <Button Text="Create Room" Clicked="Signed_Clicked" />
+                
             </StackLayout>
-            <Label Text="Already here account? Sign In" TextColor="Blue" />
+
 
         </StackLayout>
     </ContentPage.Content>

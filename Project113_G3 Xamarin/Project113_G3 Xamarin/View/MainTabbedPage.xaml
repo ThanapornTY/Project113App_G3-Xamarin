@@ -11,8 +11,8 @@
             UnselectedTabColor="Aqua"
              x:Class="Project113_G3_Xamarin.View.MainTabbedPage">
     <!--Pages can be added as references or inline-->
+
     <NavigationPage Title="Home">
-        
         <x:Arguments>
             <local:Home/>
         </x:Arguments>

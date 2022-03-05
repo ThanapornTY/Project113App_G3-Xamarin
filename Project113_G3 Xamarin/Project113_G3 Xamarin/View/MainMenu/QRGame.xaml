@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Request Games"
+             BackgroundColor="#1F237C"
              x:Class="Project113_G3_Xamarin.View.MainMenu.QRGame">
     <ContentPage.Content>
-        <StackLayout Padding="10,5,10,5">
+        <StackLayout Padding="10,10,10,5">
 
-            <Editor x:Name="userName_user" Text="" Placeholder="UserName" />
-            <Editor x:Name="email_user" Text="" Placeholder="Email" WidthRequest="30" HeightRequest="30" />
+            <Frame HorizontalOptions="Center" VerticalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="200">
+                <StackLayout Margin="10">
+                    <Entry x:Name="userName_user" Text="{Binding NameGame_Rq}" Placeholder="Name Game to Request" />
+                    <Entry x:Name="email_user" Text="{Binding Deseription_Rq}" Placeholder="Note" />
+
+                    <Button Text="Submit" Command="{Binding RqGames}" Background="#00d600" HeightRequest="50" WidthRequest="250" HorizontalOptions="Center" TranslationY="30"/>
+                </StackLayout>
+                
+            </Frame>
+            
 
 
         </StackLayout>

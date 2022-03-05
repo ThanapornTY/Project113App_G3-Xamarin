@@ -1,12 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
              x:Class="Project113_G3_Xamarin.View.Page.Page1">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#1F237C" >
+
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20,0,20,10">
+                <Label Text="LOG IN" FontSize="30" Padding="140,40,0,50" TextColor="White" />
+
+                <Label Text="Username" FontSize="18" TextColor="White" Padding="20,0,0,10" />
+                <Frame CornerRadius="50" Padding="20,10,20,10" >
+                    <Entry Placeholder="Email" FontSize="18" />
+                </Frame>
+
+                <Label Text="Username" FontSize="18" TextColor="White" Padding="20,10,0,10" />
+
+                <Frame CornerRadius="50" Padding="20,10,20,10" >
+                    <Entry Placeholder="Password" IsPassword="True" FontSize="18"/>
+                </Frame>
+
+
+
+
+                    <Grid Padding="0,20,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".1*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".1*"/>
+                        </Grid.ColumnDefinitions>
+
+                    <Button Text="Log in" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" CornerRadius="20" BackgroundColor="#FAB246" TextColor="#1F237C" />
+                    <Button Text="Register" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" CornerRadius="20" BackgroundColor="#FF6D6D" TextColor="#1F237C" />
+                    </Grid>
+
+                    <Label FontSize="Default"/>
+
+                </StackLayout>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

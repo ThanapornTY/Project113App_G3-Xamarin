@@ -1,50 +1,91 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Project113_G3_Xamarin"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin.ViewModel"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F0BB51"
+             
              x:Class="Project113_G3_Xamarin.View.Register">
+
+    <ContentPage.BindingContext>
+        <local:RegisterViewModel/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
+        <StackLayout>
+            <Frame Margin="10"
+                           HeightRequest="15"
+                           WidthRequest="15"
+                           CornerRadius="100"
+                           BackgroundColor="White"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           IsClippedToBounds="True"
+                           
+                           >
+                <Frame.Content >
+                    <!--ทำ Ever รูปหรือไอคอล-->
+                    <Image Source="https://img.icons8.com/material-outlined/344/back--v1.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="OnImageNameTapped"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
 
-        <StackLayout Padding="20,5,20,5">
-            <Label Text="Register" FontSize="Large" 
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                </Frame.Content>
 
-            <Editor x:Name="uid_useer" Placeholder="UID" />
-            <Editor x:Name="userName_user" Placeholder="UserName" />
-            <Editor x:Name="email_user" Placeholder="Email" />
-            <Entry x:Name="password_user"  IsPassword="True"  Placeholder="Password"/>
-            <Entry x:Name="confirmPassword_user"  IsPassword="True"  Placeholder="Confirm Password"/>
-            <DatePicker Date="01/01/2022" Format="" x:Name="datepicker_user"/>
-
-
-
-            <StackLayout RadioButtonGroup.GroupName="SimpleRadios" Orientation="Horizontal">
-                <Label Text="Gender" x:Name="gender_user" />
-                <RadioButton Content="Male"/>
-                <RadioButton Content="Female"/>
-            </StackLayout>
+            </Frame>
+            
+            <StackLayout Padding="10,0,10,50" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             
 
-            <Grid >
+            <Frame Margin="10">
+                <StackLayout>
+                    
+                    <Label Text="Register" FontSize="Large" Padding="0,30,0,30"
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" />
+
+                    <!--<Editor Text="{Binding Regismodel.UID}" Placeholder="UID" />-->
+                    <Editor Text="{Binding Regismodel.Name}" Placeholder="UserName" />
+                    <Editor Text="{Binding Regismodel.Email_User}" Placeholder="Email" />
+                    <Entry Text="{Binding Regismodel.Password}"  IsPassword="True"  Placeholder="Password"/>
+                    <Entry Text="{Binding Regismodel.ConfirmPassword}"  IsPassword="True"  Placeholder="Confirm Password"/>
+                     <DatePicker Format="" Date="{Binding Regismodel.Bd_User}"/>
+
+                        <StackLayout RadioButtonGroup.GroupName="{Binding Regismodel.GenderUser}" Orientation="Horizontal">
+                            <Label Text="Gender"/>
+                            <RadioButton Content="Male" />
+                            <RadioButton Content="Female"/>
+                        </StackLayout>
+
+
+                        <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".1*"/>
-                    <RowDefinition Height=".1*"/>
-                    <RowDefinition Height=".1*"/>
-                    <RowDefinition Height=".1*"/>
+
+                    
 
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width=".1*"/>
                     <ColumnDefinition Width=".1*"/>
                 </Grid.ColumnDefinitions>
-                
-                <Button Text="Register" Clicked="Register_Clicked" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1"/>
+
+                        <Button Text="Register" Command="{Binding RegistersCommand}"  CornerRadius="20" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" />
 
             </Grid>
+                </StackLayout>
+            </Frame>
+
+            
             
             
         </StackLayout>
+        </StackLayout>
+        
+        
 
     </ContentPage.Content>
 </ContentPage>

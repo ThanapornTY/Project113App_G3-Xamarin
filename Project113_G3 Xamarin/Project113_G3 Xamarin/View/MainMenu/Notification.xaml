@@ -1,13 +1,112 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project113_G3_Xamarin.ViewModel"
              Title="Notification"
              x:Class="Project113_G3_Xamarin.View.MainMenu.Notification" >
+    <ContentPage.BindingContext>
+        <local:NotificationViewModel/>
+    </ContentPage.BindingContext>
+
+    <RefreshView x:Name="RePageView" RefreshColor="Black" Refreshing="RePage">
+        <ScrollView>
+            
+            <StackLayout>
+
+                <SearchBar Placeholder="Search items..."
+                    x:Name="searchBar"
+                    CancelButtonColor="Orange"
+                    PlaceholderColor="Orange"
+                    TextColor="Orange"
+                    
+                    TextTransform="Lowercase"
+                    HorizontalTextAlignment="Center"
+                    TextChanged="search_TextChanged"
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    
+                      />
+
+                <CollectionView x:Name="NotiList" ItemsSource="{Binding notificationModels}" SelectionMode="Single" Margin="10">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="1"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Frame BackgroundColor="LightGray"
+                               Padding="10"
+                               CornerRadius="10"
+                                 HeightRequest="60"
+                               WidthRequest="400"
+                               >
+                                <StackLayout Margin="5">
+                                    
+                                    <Label Text="{Binding Title}" FontSize="20" />
+
+                                    <Label Text="{Binding Description}" FontSize="15" />
+                                    
+                                    
+                                </StackLayout>
+
+                            </Frame>
+
+                        </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </StackLayout>
+
+        </ScrollView>
+    </RefreshView>
+    
+    <!--
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <SearchBar Placeholder="Search items..."
+                    x:Name="searchBar"
+                    CancelButtonColor="Orange"
+                    PlaceholderColor="Orange"
+                    TextColor="Orange"
+                    
+                    TextTransform="Lowercase"
+                    HorizontalTextAlignment="Center"
+                    TextChanged="search_TextChanged"
+                    FontSize="Medium"
+                    FontAttributes="Italic"
+                    
+                      />
+
+            <Label Text="{Binding Title}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <Label Text="{Binding Description}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+            <CollectionView x:Name="NotiList" ItemsSource="{Binding notificationModels}" SelectionMode="Single" SelectedItem="{Binding selectProduct}" SelectionChangedCommand="{Binding SelectCommand}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="1"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Frame BackgroundColor="AliceBlue"
+                               Padding="10"
+                               CornerRadius="10"
+                                 HeightRequest="60"
+                               WidthRequest="400"
+                               >
+                            <StackLayout>
+                                <Label Text="{Binding Title}"/>
+                                <Label Text="{Binding Description}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+
+                        </Frame>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
         </StackLayout>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
 </ContentPage>

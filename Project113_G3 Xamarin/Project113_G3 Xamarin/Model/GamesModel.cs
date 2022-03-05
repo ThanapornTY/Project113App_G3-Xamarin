@@ -4,13 +4,21 @@ using System.Text;
 
 namespace Project113_G3_Xamarin.Model
 {
-    class GamesModel
+    public class GamesModel
     {
-        public int ID { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public float Price { get; set; }
 
-        public Uri Image { get; set; }
+        public int Id { get; set; }
+
+
+        public string NameGame { get; set; }
+
+
+        public string TypeGame { get; set; }
+
+
+        public string Description_Game { get; set; }
+
+
+        public Uri url { get; set; }
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zdc2COK/2CqffmkN3OR9lZ76AE/ozl2imqDnaeddgmPwOzOzRVOTbMM+nzwmm1i6Ou3lfYzsePIqUzFhN7LHdQ==",
+  "dgSpecHash": "zCL+mSl3ZRrmQ8XXrpTElz+8J12GlOjpD3CsGVqGaIv9Xzzbfmi3P6bulcBqqkjndiaXygOaxToiLlfBs4P9RQ==",
   "success": true,
-  "projectFilePath": "D:\\Pj113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.iOS\\Project113_G3 Xamarin.iOS.csproj",
+  "projectFilePath": "D:\\Work\\Project113_G3 VeryFinal\\Project113_G3 Xamarin\\Project113_G3 Xamarin\\Project113_G3 Xamarin.iOS\\Project113_G3 Xamarin.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\misak\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\misak\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\misak\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\misak\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
